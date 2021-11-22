@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .main{
+            width: 600px;
+            margin: 0 auto;
+            
+        }
+        .title{
+            text-transform: uppercase;
+        }
+        .input-wrap{
+            margin-bottom: 6px;
+        }
+        label{
+            display: inline-block;
+            min-width: 140px;
+        }
+        
+        .message{
+            color: rgb(196, 52, 52);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">Đăng ký thành viên</h1>
+        <form>
+            <div class="input-wrap">
+                <label for="name">Họ và tên</label>
+                <input name="name" type="text" id="name">
+                <div class="message"></div>
+            </div>
+            <div class="input-wrap">
+                <label for="password">Mật khẩu</label>
+                <input name="password" type="password" id="password">
+                <div class="message"></div>
+            </div>
+            <div class="input-wrap">
+                <label for="password-confirm">Khẳng định mật khẩu</label>
+                <input name="password-confirm" type="password" id="password-confirm">
+                <div class="message"></div>
+            </div>
+            <div class="input-wrap">
+                <label for="birth">Ngày tháng năm sinh</label>
+                <input name="birth" type="date" id="birth">
+                <div class="message"></div>
+            </div>
+            <div class="input-wrap">
+                <label for="tel">Số điện thoại</label>
+                <input name="tel" type="tel" id="tel">
+                <div class="message"></div>
+            </div>
+            <div class="input-wrap">
+                <label for="file">Đường dẫn ảnh</label>
+                <input name="file" type="file" id="file">
+                <div class="message"></div>
+            </div>
+            <div class="btn-group">
+                <button type="submit">Đăng ký</button>
+                <button>Hủy bỏ</button>
+            </div>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
